@@ -11,6 +11,7 @@ function Buttons({ cubeGroup }) {
   useControls('Cube', {
     'Left CW': button(() => {
       rotate(cubeGroup.current, rotationGroup.current, 'x', -0.5, 1)
+      rotate(cubeGroup.current, rotationGroup.current, 'x', 0.5, -1)
     }),
     'Left CCW': button(() => {
       rotate(cubeGroup.current, rotationGroup.current, 'x', -0.5, -1)
